@@ -1,5 +1,5 @@
 
-# GameServer WebSocket
+# GameServer - WebSocket
 
 https://user-images.githubusercontent.com/32052204/196291759-001170d4-2cfd-4a49-a4d3-a3e30c683564.mp4
 
