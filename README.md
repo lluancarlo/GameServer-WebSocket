@@ -1,10 +1,7 @@
 
 # GameServer WebSocket
 
-<p align="center">
-    <a href="https://imgur.com/cgSwc9Y" target="_blank">
-    <img src="http://i.imgur.com/cgSwc9Yh.gif" alt="Databay showcase gif" title="Databay showcase gif" width="500"/>
-</p>
+https://user-images.githubusercontent.com/32052204/196291759-001170d4-2cfd-4a49-a4d3-a3e30c683564.mp4
 
 A bundle of a project that applying the concept of game server using WebSocket, connecting two different type of clients in the same server, sharing the same informations.
 
