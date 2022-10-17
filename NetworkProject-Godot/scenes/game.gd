@@ -50,6 +50,7 @@ func _player_handler(data: Array) -> void:
 	for i in data.size():
 		if data[i].Name == _local_player.p_name:
 			data.remove(i)
+			break
 	
 	for p in data:
 		var name = p.Name
