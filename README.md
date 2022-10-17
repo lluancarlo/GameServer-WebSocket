@@ -1,6 +1,11 @@
 
 # GameServer WebSocket
 
+<p align="center">
+    <a href="https://imgur.com/cgSwc9Y" target="_blank">
+    <img src="http://i.imgur.com/cgSwc9Yh.gif" alt="Databay showcase gif" title="Databay showcase gif" width="500"/>
+</p>
+
 A bundle of a project that applying the concept of game server using WebSocket, connecting two different type of clients in the same server, sharing the same informations.
 
 - **Server** `Python`: A simple Python server using *SimpleWebSocketServer*. The server just receive the information and share to all clients.
@@ -12,13 +17,13 @@ A bundle of a project that applying the concept of game server using WebSocket, 
 It's really simple and peace of cake to understand. We have a server that receive all the updates from the player (both Godot and Unity clients). Every change that the player has (Position, in that case) will be send to the server.
 
 <p align="center">
-    <img width="400" src="https://i.imgur.com/slQ0yy2.png" alt="Architecture">
+    <img width="400" src="https://i.imgur.com/vEF6o0N.png" alt="Architecture">
 </p>
 
 After that, the server will receive the information and add the player to the list of online players. Therefore, every time that a player has your position updated, the server receive it from the client, update the position on the list of online players and send that list to all the clients.
 
 <p align="center">
-    <img width="400" src="https://i.imgur.com/RboNZbR.png" alt="Architecture">
+    <img width="400" src="https://i.imgur.com/kVpCp43.png" alt="Architecture">
 </p>
 
 ## Lessons Learned
