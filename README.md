@@ -1,10 +1,7 @@
 
 # GameServer WebSocket
 
-A bundle of a project that applying the concept of 
-game server using WebSocket, connecting two 
-different type of clients in the same server, 
-sharing the same informations.
+A bundle of a project that applying the concept of game server using WebSocket, connecting two different type of clients in the same server, sharing the same informations.
 
 - **Server** `Python`: A simple Python server using *SimpleWebSocketServer*. The server just receive the information and share to all clients.
 - **Godot Engine** `2D Game`: A basic 2D game that the player can move around the map.
@@ -12,24 +9,21 @@ sharing the same informations.
 
 ## Architecture
 
-It's really simple and peace of cake to understand. We have
-a server that receive all the updates from the player (both Godot 
-and Unity clients). Every change that the player has (Position, in 
-that case) will be send to the server.
+It's really simple and peace of cake to understand. We have a server that receive all the updates from the player (both Godot and Unity clients). Every change that the player has (Position, in that case) will be send to the server.
 
 <p align="center">
     <img width="400" src="https://i.imgur.com/slQ0yy2.png" alt="Architecture">
 </p>
 
-After that, the server will receive the information and add the
-player to the list of online players. Therefore, every time that a player
-has your position updated, the server receive it from the client, 
-update the position on the list of online players and send that list
-to all the clients.
+After that, the server will receive the information and add the player to the list of online players. Therefore, every time that a player has your position updated, the server receive it from the client, update the position on the list of online players and send that list to all the clients.
 
 <p align="center">
     <img width="400" src="https://i.imgur.com/RboNZbR.png" alt="Architecture">
 </p>
+
+## Lessons Learned
+
+WebSocket use TCP connection. It means that it has high confiability but usually high latency, that is bad to open-world or multiplayer games for example. In the other hand, it could be nice to use in a chat or turn-based games like card games or table games, where we don't care so much about latency.
 
 ## Project Details
 
