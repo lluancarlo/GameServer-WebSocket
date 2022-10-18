@@ -11,7 +11,7 @@ A bundle of a project that applying the concept of game server using WebSocket, 
 
 ## Architecture
 
-It's really simple and peace of cake to understand. We have a server that receive all the updates from the player (both Godot and Unity clients). Every change that the player has (Position, in that case) will be send to the server.
+It's really simple and a peace of cake to understand. We have a server that receive all the updates from the player (both Godot and Unity clients). Every change that the player has (Position, in that case) will be send to the server.
 
 <p align="center">
     <img width="400" src="https://i.imgur.com/vEF6o0N.png" alt="Architecture">
@@ -25,7 +25,7 @@ After that, the server will receive the information and add the player to the li
 
 ## Lessons Learned
 
-WebSocket use TCP connection. It means that it has high confiability but usually high latency, that is bad to open-world or multiplayer games for example. In the other hand, it could be nice to use in a chat or turn-based games like card games or table games, where we don't care so much about latency.
+WebSocket use TCP connection. It means that it has high reliability but usually high latency, that is bad to open-world or multiplayer games for example. In the other hand, it could be nice to use in a chat or turn-based games like card games or table games, where we don't care so much about latency.
 
 ## Project Details
 
